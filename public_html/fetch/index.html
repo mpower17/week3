@@ -1,0 +1,12 @@
+<html>
+ <body>
+   <input id="inp">
+   <button id="bt"></button>
+   <script>
+     bt.onclick = async function() {
+        let Response = await fetch(document.getElementById("inp").value);
+        document.getElementById("inp").value = await Response.text();
+     };
+   </script>
+ </body>
+</html>
